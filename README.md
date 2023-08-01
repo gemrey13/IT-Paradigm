@@ -39,6 +39,11 @@ git config --global --add safe.directory /storage/emulated/0/IT-Paradigm
 ```
 7. Then use `git add .` and start coding now
 
+**Git Commit**
+```Bash
+git commit -m "Your changes"
+```
+
 **Git Pull and Push**
 **Git Pull**
 ```Bash
@@ -48,4 +53,5 @@ git pull
 ```Bash
 git push origin <branch>
 ```
+
 > Where branch is your branch name, the default is main
