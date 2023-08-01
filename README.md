@@ -16,13 +16,42 @@
 
 **Mobile Phone**
 1. Download and install Termux [Link](https://f-droid.org/en/packages/com.termux/)
-2. Next is install git thru this commands:
+2. Enable the storage permission using `termux-setup-storage`
+3. Next is install git thru this commands:
 ```Bash
-apt get && apt upgrade
-api install git openssh
+apt update
+apt upgrade
+api install git
 ```
-3. Next is you need to sign up your github account into your termux by executing:
+4. Then go to your phone storage using the cd and ls method like
 ```Bash
-ssh-keygen -t rsa -C "YOUR_EMAIL_ADDRESS"
-ssh -T git@github.com
+cd ../../../../../..
+cd /storage/emulated/0/
 ```
+5. Next is you need to git clone your forked repo using: `git clone [link here]` example is:
+```Bash
+git clone https://github.com/RyannKim27/IT-Paradigm
+```
+5. Next is go to the directory of your paradigm using `cd IT-Paradigm` command
+6. Then use `git config --global --add safe.directory [Repo Directory]` to start example is
+```Bash
+git config --global --add safe.directory /storage/emulated/0/IT-Paradigm
+```
+7. Then use `git add .` and start coding now
+
+**Git Commit**
+```Bash
+git commit -m "Your changes"
+```
+
+**Git Pull and Push**
+**Git Pull**
+```Bash
+git pull
+```
+**Git Push**
+```Bash
+git push origin <branch>
+```
+
+> Where branch is your branch name, the default is main
